@@ -1,0 +1,138 @@
+body,
+ul,
+li,
+p{
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  list-style: none;
+  font-size: 1.2rem;
+  font-family: Arial;
+}
+header {
+  margin-bottom:0px;
+  background-image: url("img/fundo2.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-attachment:scroll;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  color: black;
+}
+
+menu {
+  display: flex;
+
+}
+
+menu li {
+  margin-left: 10px;
+}
+
+menu li a {
+  display: block;
+  padding: 20px;
+}
+body {
+  margin-bottom: 100px;
+  background-image: url("img/fundo.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-attachment:scroll;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+A:hover { color: red;
+ }
+}
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 70px;
+}
+h2{
+  text-align: center;
+  font-size: 30px;
+  color: black;
+}
+
+
+h4{
+    font-size: 15px;
+}
+img {
+  max-width: 100%;
+  display: block;
+  margin: 0px;
+}
+p{
+  text-align: justify;
+  font-size: 20px;
+  margin-left:250px;
+}
+nav{
+  padding: 15px;
+  background: white;
+  text-align: center;
+  border: 10px solid black;
+
+}
+main{
+  width: 50%;
+  padding: 20px;
+  margin: 10px;
+}
+  footer{
+  clear: both;
+  height: 30px;
+  padding: 20px;
+  top: 160px;
+  position: relative;
+  background: white;
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  grid-gap: 20px;
+  max-width: 800px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.sidebar > div {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    display: flex;
+    overflow: scroll;
+  }
+  .sidebar > div {
+    flex: 1 0 200px;
+    margin: 0 10px;
+  }
+}
+
+function shareImage(titulo,texto,url){
+
+if (navigator.share) {
+  navigator.share({
+    title: titulo,
+    text: texto,
+    url: url,
+  })
+    .then(() => console.log('Successful share'))
+    .catch((error) => console.log('Error sharing', error));
+}}

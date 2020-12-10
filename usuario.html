@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <link rel="stylesheet" href="estilo.css">
+    <title>Usuário</title>
+  </head>
+  <body>
+    <header>
+      <h1>Tecnologia News</h1>
+      <p>Aqui você irá encontrar as melhores Noticias sobre: jogos, Tecnologia e entreterimento</p>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Pagina Principal</a/><li>
+        <li><a href="usuario.html">Login</a></li>
+        <li><a href="sobre.html">Sobre os desenvolvedores</a></li>
+
+      </ul>
+    </nav>
+    <h2>Faça seu Login</h2>
+  </section>
+  <form method="get">
+<label for="nome">Nome Completo</label><br>
+<input type="text" name="nome" required placeholder="Digite seu nome "><br><br>
+
+<label for="idade">Idade</label><br>
+<input type="number" name="idade"><br><br>
+
+<label for="Data de nascimento">Data de nascimento:</label><br>
+<input type="date" name="Data de nascimento"><br><br>
+
+<label for="email">E-mail</label><br>
+<input type="email" name="email"><br><br>
+
+<label for="Senha">Senha</label> <br>
+<input type="password" name="Senha"> <br><br>
+
+<fieldset>
+  <legend>Dados de endereço</legend>
+  <label for="rua">Rua</label>
+  <input type="text" name="rua">
+  <label for="numero">numero</label>
+  <input type="text" name="nuumero">
+
+  <label for="cidade">Cidade</label>
+  <select name="cidade">
+    <option value="pp">Ponta Pora</option>
+    <option value="sp">Sanga Puita</option>
+    <option value="dd">Dourados</option>
+    <option value="cg">Campo Grande</option>
+
+  </select>
+  <label for="Estado"></label>
+  <input type="radio" name="Estado" value="MS"><span>MS</span>
+  <input type="radio" name="Estado" value="MT"><span>MT</span>
+</fieldset><br><br>
+
+<label for="msg">Mensagem</label>
+<textarea name="msg" rows="10" cols="100"></textarea>
+
+  <label for="Foto"></label>
+  <input type="file" name="Foto" value="" > <br>
+<input type="submit" name="botao" value="Enviar"> <br>
+<input type="reset" name="botao" value="limpar"> <br>
+</form>
+  </body>
+</html>
